@@ -1,0 +1,16 @@
+.formAuthScreen {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+@media(max-width: 600px) {
+  .formAuthScreen {
+    padding: 0;
+  }
+}
