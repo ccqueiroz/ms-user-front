@@ -1,0 +1,39 @@
+.containerInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelInput {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.labelInputDefault {
+  color: var(--primary-color-text);
+}
+
+.labelInputError {
+  color: var(--error-color-text);
+}
+
+.inputCustom {
+  height: 4.8rem;
+  font-size: 1.7rem;
+  padding: 1.5rem;
+}
+
+.borderInputDefault {
+  border: 1px solid var(--input-border-color);
+}
+
+.borderInputError {
+  border: 1px solid var(--error-color-input);
+}
+
+@media(max-width: 600px) {
+  .labelInput {
+    font-size: 1.4rem;
+  }
+}
