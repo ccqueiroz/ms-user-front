@@ -1,0 +1,35 @@
+.containerButtonAuth {
+  width: 100%;
+  max-width: 25rem;
+  min-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.containerButtonAuth button {
+  background-color: var(--primary-color-text);
+  color: var(--secondary-color-text);
+  font-weight: 700;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.4 all ease-in-out;
+  font-size: 1.6rem;
+}
+
+.containerButtonAuth button:hover {
+  filter: opacity(0.85);
+}
+
+.containerButtonAuth .answerButtonAuth, .actionButtonAuth {
+  text-align: center;
+}
+
+.containerButtonAuth .actionButtonAuth {
+  font-weight: 700;
+  margin-top: -0.5rem;
+  color: var(--primary-color-text);
+}
