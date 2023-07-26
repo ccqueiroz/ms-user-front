@@ -1,0 +1,91 @@
+#wrapperContainerAuthScreen {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+#heroBgDefault {
+  background-image: url('../../Common/assets/hero-default.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#wrapperForm {
+  padding: 5%;
+}
+
+#wrapperLogo {
+  width: 11rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  object-fit: fill;
+  object-position: center;
+}
+
+#contentForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+#contentForm #heading {
+  margin: 0.5rem auto 1rem;
+}
+
+#form {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.2rem;
+}
+
+@media(max-width: 600px) {
+  #wrapperContainerAuthScreen {
+    grid-template-columns: 1fr;
+  }
+
+  #wrapperForm {
+    background-image: url('../../Common/assets/hero-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #wrapperLogo {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #contentForm {
+    width: max-content;
+    min-width: 98%;
+    height: max-content;
+    background: var(--bg-color);
+    padding: 4rem 3.2rem;
+    box-shadow: 1px 1px 25px 2px #000000;
+  }
+
+  #form {
+    padding: 1.2rem 0;
+  }
+
+  #heroBgDefault {
+    display: none;
+  }
+}
